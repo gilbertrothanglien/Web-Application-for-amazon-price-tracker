@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap');
+body
+{
+  background-image: url("bg/star.gif"), url("bg/gra2.jpg");
+  background-position: left top, left top;
+  background-repeat: repeat, no-repeat;
+}
+
+.nvbrcus{
+  color: white;
+}
+#logo
+{
+  font-family: 'Kiwi Maru', serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+#logo:hover
+{
+  text-decoration: none;
+  color: lightgray;
+}
+#navbar li
+{
+  font-family: 'Kiwi Maru', serif;
+}
+#navbar li a
+{
+  color: white;
+}
+#navbar li a:hover
+{
+  color: lightgray;
+}
+.group{
+  text-align: center;
+}
+.space{
+  padding-top: 10px;
+}
+main
+{
+  margin-top: 40px;
+  border-radius: 25px;
+  background-color: #D0CFCF;
+}
+table {
+    background-color: transparent;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+table th,
+table td {
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: rgb(179, 208, 255, 0.3)
+}

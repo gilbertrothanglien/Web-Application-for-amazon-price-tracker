@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+{% block main %}
+<table>
+    <thead>
+        <tr>
+            <th>Sl. no.</th>
+            <th>Product name</th>
+            <th>Price</th>
+            <th>Track Time</th>
+        </tr>
+    </thead>
+    <tbody>
+      {% set count = namespace(value=1) %}
+        {% for hi in hist %}
+        <tr>
+          <form class="" action="/delete" method="post">
+            <td>{{ count.value }}</td>
+            {% set count.value = count.value + 1 %}
+            <td>{{hi[3]}}</td>
+            <td>{{hi[2]}}</td>
+            <td>{{hi[4]}}</td>
+            <input type="hidden" name="sl" value="{{hi[4]}}">
+            <td><button class="btn btn-danger" type="sumbit" name="button">Delete</button><td/>
+          </form>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

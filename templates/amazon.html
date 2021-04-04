@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Track Price
+{% endblock %}
+
+{% block main %}
+<form class="group" action="/amazon" method="post">
+  <div class="space">
+    <input type="text" name="product" value="" placeholder="product name(max: 20)" autocomplete="off">
+  </div>
+  <div class="space">
+    <input type="text" name="url" value="" placeholder="Url." autofocus autocomplete="off">
+  </div>
+  <div class="space">
+    <input type="text" name="price" value="" placeholder="Price" autocomplete="off">
+  </div>
+  <div class="space">
+    <button class="btn btn-success" type="submit" name="button">Track</button>
+  </div>
+</form>
+{% endblock %}
